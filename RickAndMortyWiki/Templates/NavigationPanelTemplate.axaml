@@ -1,0 +1,64 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:RickAndMortyWiki.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="RickAndMortyWiki.Templates.NavigationPanelTemplate"
+             x:DataType="vm:NavigationViewModel">
+    <Grid Background="#fff" HorizontalAlignment="Center" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+        <Image Grid.Column="0" Source="/Assets/Rick-And-Morty-Logo.png" />
+        <Button Grid.Column="1"
+                FontSize="45"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Foreground="#595959"
+                Content="Персонажи"
+                Command="{Binding CharactersPage}" >
+                <Button.Styles>
+                        <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                <Setter Property="Foreground" Value="SpringGreen"></Setter>
+                        </Style>
+                </Button.Styles>
+        </Button>
+        <Button Grid.Column="2"
+                FontSize="45"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Foreground="#595959"
+                Content="Локации"
+                Command="{Binding LocationsPage}" >
+                <Button.Styles>
+                        <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                <Setter Property="Foreground" Value="SpringGreen"></Setter>
+                        </Style>
+                </Button.Styles>
+        </Button>
+        <Button Grid.Column="3"
+                FontSize="45"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Foreground="#595959"
+                Content="Эпизоды"
+                Command="{Binding EpisodesPage}">
+                <Button.Styles>
+                        <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                <Setter Property="Foreground" Value="SpringGreen"></Setter>
+                        </Style>
+                </Button.Styles>
+        </Button>
+        <Button Grid.Column="4"
+                FontSize="45"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Foreground="#595959"
+                Content="Аккаунт"
+                Command="{Binding UserPage}">
+                <Button.Styles>
+                        <Style Selector="Button:pointerover /template/ ContentPresenter">
+                                <Setter Property="Foreground" Value="SpringGreen"></Setter>
+                        </Style>
+                </Button.Styles>
+        </Button>
+    </Grid>
+</UserControl>

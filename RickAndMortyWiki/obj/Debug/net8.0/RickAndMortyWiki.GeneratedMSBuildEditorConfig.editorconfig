@@ -1,0 +1,57 @@
+is_global = true
+build_property.AvaloniaNameGeneratorIsEnabled = true
+build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
+build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
+build_property.AvaloniaNameGeneratorFilterByPath = *
+build_property.AvaloniaNameGeneratorFilterByNamespace = *
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RickAndMortyWiki
+build_property.ProjectDir = /Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[/Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/App.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/Templates/CharactersDataTemplate.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/Templates/EpisodesDataTemplate.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/Templates/FavouriteCharactersDataTemplate.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/Templates/LocationsDataTemplate.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/Templates/NavigationPanelTemplate.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/Views/CharactersView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/Views/EpisodesView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/Views/LocationsViewModel.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/Views/LoginView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/Views/MainWindowView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/Views/NavigationView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/Views/UserView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

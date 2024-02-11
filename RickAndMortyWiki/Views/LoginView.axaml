@@ -1,0 +1,74 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:rxui="clr-namespace:Avalonia.ReactiveUI;assembly=Avalonia.ReactiveUI"
+             xmlns:vm="using:RickAndMortyWiki.ViewModels"
+             x:DataType="vm:LoginViewModel"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="RickAndMortyWiki.Views.LoginView">
+
+    <Grid RowDefinitions="Auto,Auto, Auto"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Center">
+        <Image MaxHeight="200" Source="/Assets/Rick-And-Morty-Logo.png" />
+        <Grid Grid.Row="1" RowDefinitions="*,*">
+            <TextBox Grid.Row="0"
+                     Name="Username"
+                     Background="#D9D9D9" Width="500" HorizontalAlignment="Center"
+                     Text="{Binding Username, Mode=TwoWay}"
+                     TextAlignment="Center"
+                     BorderBrush="Transparent"
+                     Watermark="Введите ваш username"
+                     Opacity="30" />
+            <TextBox Grid.Row="1"
+                     Name="Password"
+                     PasswordChar="*"
+                     Background="#D9D9D9" Width="500" HorizontalAlignment="Center"
+                     Text="{Binding Password, Mode=TwoWay}"
+                     TextAlignment="Center"
+                     BorderBrush="Transparent"
+                     Watermark="Введите ваш пароль"
+                     Margin="30"
+                     Opacity="30" />
+        </Grid>
+        <Grid Grid.Row="2" ColumnDefinitions="Auto,Auto, Auto,*" VerticalAlignment="Center"
+              HorizontalAlignment="Center">
+            <Button Grid.Column="0"
+                    Width="300"
+                    Height="110"
+                    Background="#D9D9D9"
+                    Foreground="#595959"
+                    FontSize="65"
+                    Margin="30"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    Content="Войти"
+                    Command="{Binding LoginCommand}">
+                <Button.Styles>
+                    <Style Selector="Button:pointerover /template/ ContentPresenter">
+                        <Setter Property="Background" Value="LightGray"></Setter>
+                    </Style>
+                </Button.Styles>
+            </Button>
+            <Button Grid.Column="2"
+                    Width="300"
+                    Height="110"
+                    Background="#D9D9D9"
+                    Foreground="#595959"
+                    FontSize="65"
+                    HorizontalContentAlignment="Center"
+                    VerticalContentAlignment="Center"
+                    Margin="30"
+                    Content="Регистрация"
+                    Command="{Binding RegisterCommand}">
+                <Button.Styles>
+                    <Style Selector="Button:pointerover /template/ ContentPresenter">
+                        <Setter Property="Background" Value="LightGray"></Setter>
+                    </Style>
+                </Button.Styles>
+            </Button>
+        </Grid>
+    </Grid>
+
+</UserControl>

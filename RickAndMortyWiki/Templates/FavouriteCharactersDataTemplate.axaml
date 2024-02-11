@@ -1,0 +1,30 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             xmlns:m="clr-namespace:RickAndMortyWiki.Models"
+             x:DataType="m:CharacterModel"
+             x:Class="RickAndMortyWiki.Templates.FavouriteCharactersDataTemplate">
+    <Border Background="#30A6D1" CornerRadius="5" Margin="5">
+        <Expander Header="{Binding name}"
+                  ExpandDirection="Down"
+                  Background="Transparent"
+                  Foreground="Transparent"
+                  BorderBrush="Transparent"
+                  Width="{Binding $parent[Border].Bounds.Width}"
+                  CornerRadius="10">
+            <Grid RowDefinitions="1*,1*,1*,1*,1*,1*,1*,1*,1*,1*,1*,1*,1*,1*,1*"
+                  ColumnDefinitions="1*,1*">
+                <TextBlock Grid.Column="0" Grid.Row="1" Foreground="#fff" Text="Статус"/>
+                <TextBlock Grid.Column="1" Grid.Row="1" Foreground="#fff" Text="{Binding status}"/>
+                <TextBlock Grid.Column="0" Grid.Row="2" Foreground="#fff" Text="Вид"/>
+                <TextBlock Grid.Column="1" Grid.Row="2" Foreground="#fff" Text="{Binding species}"/>
+                <TextBlock Grid.Column="0" Grid.Row="3" Foreground="#fff" Text="Подвид"/>
+                <TextBlock Grid.Column="1" Grid.Row="3" Foreground="#fff" Text="{Binding type}"/>
+                <TextBlock Grid.Column="0" Grid.Row="4" Foreground="#fff" Text="Пол"/>
+                <TextBlock Grid.Column="1" Grid.Row="4" Foreground="#fff" Text="{Binding gender}"/>
+            </Grid>
+        </Expander>
+    </Border>
+</UserControl>

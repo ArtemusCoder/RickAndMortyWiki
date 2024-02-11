@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="RickAndMortyWiki/App.axaml" value="RickAndMortyWiki/RickAndMortyWiki.csproj" />
+        <entry key="RickAndMortyWiki/Templates/CharactersDataTemplate.axaml" value="RickAndMortyWiki/RickAndMortyWiki.csproj" />
+        <entry key="RickAndMortyWiki/Templates/EpisodesDataTemplate.axaml" value="RickAndMortyWiki/RickAndMortyWiki.csproj" />
+        <entry key="RickAndMortyWiki/Templates/FavouriteCharactersDataTemplate.axaml" value="RickAndMortyWiki/RickAndMortyWiki.csproj" />
+        <entry key="RickAndMortyWiki/Templates/LocationsDataTemplate.axaml" value="RickAndMortyWiki/RickAndMortyWiki.csproj" />
+        <entry key="RickAndMortyWiki/Templates/NavigationPanelTemplate.axaml" value="RickAndMortyWiki/RickAndMortyWiki.csproj" />
+        <entry key="RickAndMortyWiki/Views/CharactersView.axaml" value="RickAndMortyWiki/RickAndMortyWiki.csproj" />
+        <entry key="RickAndMortyWiki/Views/EpisodesView.axaml" value="RickAndMortyWiki/RickAndMortyWiki.csproj" />
+        <entry key="RickAndMortyWiki/Views/LocationsViewModel.axaml" value="RickAndMortyWiki/RickAndMortyWiki.csproj" />
+        <entry key="RickAndMortyWiki/Views/LoginView.axaml" value="RickAndMortyWiki/RickAndMortyWiki.csproj" />
+        <entry key="RickAndMortyWiki/Views/MainWindow.axaml" value="RickAndMortyWiki/RickAndMortyWiki.csproj" />
+        <entry key="RickAndMortyWiki/Views/MainWindowView.axaml" value="RickAndMortyWiki/RickAndMortyWiki.csproj" />
+        <entry key="RickAndMortyWiki/Views/NavigationView.axaml" value="RickAndMortyWiki/RickAndMortyWiki.csproj" />
+        <entry key="RickAndMortyWiki/Views/UserView.axaml" value="RickAndMortyWiki/RickAndMortyWiki.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

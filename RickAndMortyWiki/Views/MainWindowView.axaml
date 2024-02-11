@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:RickAndMortyWiki.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="using:RickAndMortyWiki.Views"
+        xmlns:reactiveUi="http://reactiveui.net"
+        xmlns:locators="clr-namespace:RickAndMortyWiki.Locators"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="RickAndMortyWiki.Views.MainWindowView"
+        x:DataType="vm:LoginViewModel"
+        Title="Rick And Morty Wiki"
+        Background="#fff">
+    <Design.DataContext><vm:LoginViewModel/></Design.DataContext>
+    <Grid RowDefinitions="*,Auto">
+        <reactiveUi:RoutedViewHost Router="{Binding Router}">
+            <reactiveUi:RoutedViewHost.DefaultContent>
+                <views:LoginView/>
+            </reactiveUi:RoutedViewHost.DefaultContent>
+            <reactiveUi:RoutedViewHost.ViewLocator>
+                <locators:AppViewLocator />
+            </reactiveUi:RoutedViewHost.ViewLocator>
+        </reactiveUi:RoutedViewHost>
+    </Grid>
+</Window>
