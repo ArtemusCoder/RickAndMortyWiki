@@ -137,3 +137,4 @@
 /Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/bin/Debug/net8.0/SQLite.Net.Platform.Win32.dll
 /Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/bin/Debug/net8.0/SQLite.Net.Platform.Generic.dll
 /Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/bin/Debug/net8.0/SQLite.Net.dll
+/Users/artemus/RiderProjects/RickAndMortyWiki/RickAndMortyWiki/obj/Debug/net8.0/RickAndMortyWiki.sourcelink.json

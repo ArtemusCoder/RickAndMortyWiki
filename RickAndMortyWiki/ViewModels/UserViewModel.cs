@@ -43,25 +43,44 @@ public class UserViewModel : ReactiveObject, IRoutableViewModel, IScreen
         {
             char_list.Add(character.character_id.ToString());
         }
-        string url = "https://rickandmortyapi.com/api/character/" + String.Join(",", char_list);
-        using (var httpClient = new HttpClient())
+
+        string url = "https://rickandmortyapi.com/api/character/" + string.Join(",", char_list);
+        if (char_list.Count != 0)
         {
-            var response = httpClient.GetStringAsync(url).Result;
-            var apiResponse = JsonSerializer.Deserialize<List<CharacterModel>>(response);
-            foreach (var character in apiResponse)
+            using (var httpClient = new HttpClient())
             {
-                FavoriteCharacters.Add(
-                    new CharacterModel(
-                            character.id,
-                            character.name,
-                            character.status,
-                            character.species,
-                            character.type,
-                            character.gender
+                var response = httpClient.GetStringAsync(url).Result;
+                if (char_list.Count == 1)
+                {
+                    var apiResponse = JsonSerializer.Deserialize<CharacterModel>(response);
+                    FavoriteCharacters.Add(
+                        new CharacterModel(
+                            apiResponse.id,
+                            apiResponse.name,
+                            apiResponse.status,
+                            apiResponse.species,
+                            apiResponse.type,
+                            apiResponse.gender
                         ));
+                }
+                else
+                {
+                    var apiResponse = JsonSerializer.Deserialize<List<CharacterModel>>(response);
+                    foreach (var character in apiResponse)
+                    {
+                        FavoriteCharacters.Add(
+                            new CharacterModel(
+                                character.id,
+                                character.name,
+                                character.status,
+                                character.species,
+                                character.type,
+                                character.gender
+                            ));
+                    }
+                }
             }
         }
-        
     }
 
     [Obsolete("Obsolete")]
